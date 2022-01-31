@@ -10,7 +10,6 @@ import 'about.dart';
 import 'gallery.dart';
 import 'partial_views/poem_details.dart';
 import 'partial_views/story_details.dart';
-import 'partial_views/student_details/student_details.dart';
 import 'student_view/student_profile.dart';
 
 class Articles extends StatefulWidget {

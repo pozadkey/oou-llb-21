@@ -8,6 +8,7 @@ import '../about.dart';
 import '../articles.dart';
 import '../partial_views/student_details/student_details2.dart';
 import 'student_profile.dart';
+import 'student_profile3.dart';
 
 class StudentProfile2 extends StatefulWidget {
   const StudentProfile2({Key? key}) : super(key: key);
@@ -100,8 +101,8 @@ class _StudentProfile2State extends State<StudentProfile2> {
                   ),
                 );
               }),
-          Padding(
-            padding: EdgeInsets.fromLTRB(15, 5, 15, 10),
+          Container(
+            padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -113,24 +114,18 @@ class _StudentProfile2State extends State<StudentProfile2> {
                   child: Row(
                     children: [
                       Icon(Icons.navigate_before_rounded,
-                          color: Colors.yellow[700], size: 15),
+                          color: Colors.yellow[700], size: 30),
                       Text(
                         'Previous',
                         style: _buttonfonts,
                       ),
                     ],
                   ),
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.green[500],
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0)),
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                  ),
                 ),
                 TextButton(
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => StudentProfile2()));
+                        builder: (context) => StudentProfile3()));
                   },
                   child: Row(
                     children: [
@@ -139,14 +134,8 @@ class _StudentProfile2State extends State<StudentProfile2> {
                         style: _buttonfonts,
                       ),
                       Icon(Icons.navigate_next_rounded,
-                          color: Colors.yellow[700], size: 15)
+                          color: Colors.yellow[700], size: 30)
                     ],
-                  ),
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.green[500],
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0)),
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                   ),
                 )
               ],

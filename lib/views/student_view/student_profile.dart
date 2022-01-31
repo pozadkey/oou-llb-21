@@ -100,8 +100,8 @@ class _StudentProfileState extends State<StudentProfile> {
                   ),
                 );
               }),
-          Padding(
-            padding: EdgeInsets.fromLTRB(15, 5, 15, 10),
+          Container(
+            padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -117,14 +117,8 @@ class _StudentProfileState extends State<StudentProfile> {
                         style: _buttonfonts,
                       ),
                       Icon(Icons.navigate_next_rounded,
-                          color: Colors.yellow[700], size: 20)
+                          color: Colors.yellow[700], size: 30)
                     ],
-                  ),
-                  style: TextButton.styleFrom(
-                    backgroundColor: Colors.green[500],
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0)),
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                   ),
                 )
               ],

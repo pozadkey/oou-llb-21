@@ -1,0 +1,231 @@
+// ignore_for_file: non_constant_identifier_names
+
+class Students5 {
+  String image;
+  String name;
+  String nickname;
+  String dob;
+  String state_of_origin;
+  int mobile_number;
+  String email;
+  String linkedIn;
+  String instagram;
+  String facebook;
+  String twitter;
+  String position_held;
+  String skills;
+  String hobbies;
+  String favorite_course;
+  String class_crush;
+  String parting_words;
+
+  Students5(
+      {required this.image,
+      required this.name,
+      required this.nickname,
+      required this.dob,
+      required this.state_of_origin,
+      required this.mobile_number,
+      required this.email,
+      required this.linkedIn,
+      required this.instagram,
+      required this.facebook,
+      required this.twitter,
+      required this.position_held,
+      required this.skills,
+      required this.hobbies,
+      required this.favorite_course,
+      required this.class_crush,
+      required this.parting_words});
+}
+
+List<Students5> studentList5 = [
+  Students5(
+      image: 'assets/students/51.jpg',
+      name: 'Awolowo Modupe Ijeoma ',
+      nickname: 'AIM',
+      dob: '8/28',
+      state_of_origin: 'Ondo',
+      mobile_number: 08055830420,
+      email: 'aim4krist2002@yahoo.com',
+      linkedIn: '-',
+      instagram: 'aim.314',
+      facebook: 'AimAim',
+      twitter: '-',
+      position_held: '-',
+      skills: '-',
+      hobbies: 'Cooking, relaxing , listening to music ',
+      favorite_course: 'Petroleum law ',
+      class_crush: 'Myself ',
+      parting_words:
+          'We have come this far not for the years we have already spent studying together but for the years ahead as practitioners. We will surely meet at the top of success. Love you all '),
+  Students5(
+      image: 'assets/students/56.jpg',
+      name: 'Babarinde Tomilola Mary ',
+      nickname: 'Adunni Aladire ',
+      dob: '12/24',
+      state_of_origin: 'Ogun',
+      mobile_number: 07033725863,
+      email: 'tomibabs24@gmail.com ',
+      linkedIn: 'daia',
+      instagram: 'Its__foluke',
+      facebook: 'Thomi Mary',
+      twitter: 'mzthomi',
+      position_held: 'Drama Department customier ',
+      skills: 'Photography',
+      hobbies: 'Business ',
+      favorite_course: 'Law of Conveyancing ',
+      class_crush: '-',
+      parting_words: 'Delay isn\'t Denial '),
+  Students5(
+      image: 'assets/students/57.jpg',
+      name: 'Badrudeen Adeola Lawal',
+      nickname: 'B-LAW',
+      dob: '6/15',
+      state_of_origin: 'Ogun',
+      mobile_number: 09095842788,
+      email: 'Badrulawal@gmail.com',
+      linkedIn: 'Badrudeen Lawal',
+      instagram: 'blaw_official',
+      facebook: 'Lawal Badrudeen',
+      twitter: 'blaw_official',
+      position_held:
+          '"2018/2019 - Chief Logistics, NAMLAS 2018/2019 - Honorable Clerk, LSPC 2019/2020 - General Secretary, NAMLAS 2019/2020 - Financial Secretary, Inner temple 2020/2021 - Chief Librarian, Inner temple 2020/2021 - Legal Director, OOU SUG 2020/2021 - President, NAMLAS OOU. 2016 - 2021 - Captain, Legal Falcons FC. 2021- Captain, OOULAWS FC."',
+      skills:
+          '"Leadership skills Research and Writing skills Team work Social and Emotional Intelligence."',
+      hobbies: 'Research, football and socializing with friends and mates.',
+      favorite_course: 'Intellectual Property Law',
+      class_crush: 'Kudi owo my crush! Lool..',
+      parting_words: 'Do your thing, pray and don\'t stop believing.'),
+  Students5(
+      image: 'assets/students/58.jpg',
+      name: 'Bakare Khairat Oluwatomilola',
+      nickname: 'Kay.',
+      dob: '8/25',
+      state_of_origin: 'Ogun',
+      mobile_number: 09091469707,
+      email: 'kaybee2508.bk@gmail.com',
+      linkedIn: '-',
+      instagram: 'justkhairat_',
+      facebook: '-',
+      twitter: 'justkhairat',
+      position_held:
+          '"Speaker, LSPC Treasurer, NAMLAS Deputy Speaker, LSPC Financial secretary, NAMLAS"',
+      skills: '-',
+      hobbies: 'Outdoor activities/games',
+      favorite_course: 'Evidence',
+      class_crush: 'Bakare Khairat',
+      parting_words: 'Life isn\'t perfect and neither are we.'),
+  Students5(
+      image: 'assets/students/59.jpg',
+      name: 'Banjo DivineFavour Bolajoko ',
+      nickname: 'Didi',
+      dob: '4/8',
+      state_of_origin: 'Ogun',
+      mobile_number: 08132851986,
+      email: 'banjodivinefavour@gmail.com ',
+      linkedIn: '-',
+      instagram: 'b.b.b queen',
+      facebook: 'Banjo favour',
+      twitter: '-',
+      position_held: '-',
+      skills: 'Social works',
+      hobbies: 'Cooking',
+      favorite_course: 'Family law',
+      class_crush: '-',
+      parting_words:
+          'Success is not final, failure is not fatal. It is the courage to continue that count.'),
+  Students5(
+      image: 'assets/students/60.jpg',
+      name: 'Banjo Olayinka Omotinuola ',
+      nickname: 'Ayinkeonipomo AyinkeMoney AyinkeBaby ',
+      dob: '7/3',
+      state_of_origin: 'Ogun',
+      mobile_number: 099898788777,
+      email: 'banjoolayinka65@gmail.com ',
+      linkedIn: '-',
+      instagram: 'Olaryinka__',
+      facebook: '-',
+      twitter: '-',
+      position_held: 'So many ',
+      skills: 'Catering ',
+      hobbies: '"Cooking, Traveling "',
+      favorite_course: 'Family Law',
+      class_crush: '-',
+      parting_words: 'See you guys at the top'),
+  Students5(
+      image: 'assets/students/61.jpg',
+      name: 'Bankole Ibrahim Abiola',
+      nickname: 'Alfa Ibrahim',
+      dob: '1/4',
+      state_of_origin: 'Ogun',
+      mobile_number: 08167842644,
+      email: 'hibrahimodunlami@gmail.com',
+      linkedIn: 'Bankole Ibrahim',
+      instagram: '-',
+      facebook: 'Bankole Ibrahim Abiola',
+      twitter: '-',
+      position_held:
+          'Judicial worker LSS 2017/2018, Constituency leader LSS parliamentary council 2028/2019 General Secretary LSS 2019/2020, Ameer (The President) Muslim students\' society of Nigeria (MSSN) OOU, Chairman academic committee Nigeria Association of Muslim Law students (Namlas)',
+      skills: 'Administrative skill',
+      hobbies: 'Reading ',
+      favorite_course: 'Land Law',
+      class_crush: 'My friend named (friend)',
+      parting_words: 'What\'s what doing at all is what doing well'),
+  Students5(
+      image: 'assets/students/62.jpg',
+      name: 'Bello Oluwadamilola',
+      nickname: 'Dammy',
+      dob: '5/7',
+      state_of_origin: 'Ogun ',
+      mobile_number: 08131821118,
+      email: 'bellodamilolaesther400@gmail.com',
+      linkedIn: '-',
+      instagram: '-',
+      facebook: 'Bello Damiee',
+      twitter: '-',
+      position_held: 'A one-time family banquet leader in fellowship',
+      skills: 'Writing, Baking',
+      hobbies: 'Reading fictions and articles on past events,watching movies',
+      favorite_course: 'Criminal law',
+      class_crush: '-',
+      parting_words:
+          'You can always stop but if you want it bad enough, grit your teeth and push harder.'),
+  Students5(
+      image: 'assets/students/63.jpg',
+      name: 'Bolutife Adeniji',
+      nickname: 'Adebolu',
+      dob: '5/4',
+      state_of_origin: 'Ogun',
+      mobile_number: 08105322005,
+      email: 'bolux05@gmail.com',
+      linkedIn: 'Bolutife Adeniji',
+      instagram: 'theadebolu',
+      facebook: '-',
+      twitter: 'theadebolu',
+      position_held: '-',
+      skills: 'Design, Cinematography, audio production, writing',
+      hobbies: 'Designing, creating videos, watching movies',
+      favorite_course: 'Criminology, family law and law of succession',
+      class_crush: 'So that you can tell the person abi...Lol',
+      parting_words:
+          'Do not see people as competition, rather see them as your motivation. Above anything else, "Do You", it will bring you peace and nothing beats peace.'),
+  Students5(
+      image: 'assets/students/64.jpg',
+      name: 'Bukola-Omotoso Temitope Olanrewaju',
+      nickname: 'Daddy Tobi',
+      dob: '11/3',
+      state_of_origin: 'Oyo',
+      mobile_number: 08162874307,
+      email: 'tbukolaomotoso@gmail.com',
+      linkedIn: '-',
+      instagram: 'Olanre._waju',
+      facebook: '-',
+      twitter: '@Daddy_Tobi1',
+      position_held: '-',
+      skills: '-',
+      hobbies: '"Cooking Reading Traveling"',
+      favorite_course: 'Petroleum law',
+      class_crush: 'I had none',
+      parting_words: '-'),
+];
