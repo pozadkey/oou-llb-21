@@ -109,7 +109,7 @@ List<Students16> studentList16 = [
       facebook: 'Tiwalade Aderemi ',
       twitter: 'Tiwalade Aderemi ',
       position_held:
-          'President, OOULSS 20/21Vice President, OOULSS 19/20, Public Relations Officer, OOULSS 17/18, Asst. Welfare dir 17/18, Co-founder, Energy law club, Co-founder Tech savvy law students’ club.',
+          'President, OOULSS 20/21, Vice President, OOULSS 19/20, Public Relations Officer, OOULSS 17/18, Asst. Welfare dir 17/18, Co-founder, Energy law club, Co-founder Tech savvy law students’ club.',
       skills:
           'Leadership skills, People management skills writing skills, and networking skills.',
       hobbies: 'I love energy ',

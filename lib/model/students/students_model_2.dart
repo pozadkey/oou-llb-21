@@ -153,7 +153,7 @@ List<Students2> studentList2 = [
       class_crush: 'Peterclaver in 100level ',
       parting_words:
           'It was a great pleasure to be in the same class as you brilliant folks and I love y’all '),
-  /*Students(
+  Students2(
       image: 'assets/students/19.jpg',
       name: 'Adenuga Paul',
       nickname: '-',
@@ -170,7 +170,7 @@ List<Students2> studentList2 = [
       hobbies: 'Tech, gaming and having money ',
       favorite_course: 'Women and the law',
       class_crush: 'Oreoluwa Kendore',
-      parting_words: '-'),*/
+      parting_words: '-'),
   Students2(
       image: 'assets/students/20.jpg',
       name: 'Adeola Elizabeth Ayanbanjo ',

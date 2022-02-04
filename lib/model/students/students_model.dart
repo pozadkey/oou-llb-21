@@ -100,7 +100,7 @@ List<Students> studentList = [
       favorite_course: 'Petroleum and energy Law',
       class_crush: 'Nill',
       parting_words: 'We live to Die💀'),
-  /*Students(
+  Students(
       image: 'assets/students/5.jpg',
       name: 'Abdussalam Abdulfatai Tantolorun ',
       nickname: 'Zamani',
@@ -118,7 +118,7 @@ List<Students> studentList = [
       favorite_course: 'Women and the law',
       class_crush: 'None',
       parting_words:
-          'The time spent with my colleagues has been amazing and the memories shared will forever be engraved in my heart I hope we all achieve our heart desires in the nearest future '),*/
+          'The time spent with my colleagues has been amazing and the memories shared will forever be engraved in my heart I hope we all achieve our heart desires in the nearest future '),
   Students(
       image: 'assets/students/6.jpg',
       name: 'Abdussalam Aminat Oluwatosin ',

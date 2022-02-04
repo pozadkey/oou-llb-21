@@ -1,23 +1,23 @@
 // ignore_for_file: prefer_const_constructors, curly_braces_in_flow_control_structures, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, avoid_returning_null_for_void
 
 import 'package:flutter/material.dart';
-import 'package:legal_achievers/model/students/students_model_4.dart';
+import 'package:legal_achievers/model/students/students_model_5.dart';
+import 'package:legal_achievers/model/students/students_model_7.dart';
 import 'package:legal_achievers/views/gallery.dart';
-import 'package:legal_achievers/views/partial_views/student_details/student_details4.dart';
-import 'package:legal_achievers/views/student_view/student_profile3.dart';
-import 'package:legal_achievers/views/student_view/student_profile5.dart';
+import 'package:legal_achievers/views/partial_views/student_details/student_details7.dart';
+import 'package:legal_achievers/views/student_view/student_profile8.dart';
 
 import '../about.dart';
 import '../articles.dart';
 
-class StudentProfile4 extends StatefulWidget {
-  const StudentProfile4({Key? key}) : super(key: key);
+class StudentProfile7 extends StatefulWidget {
+  const StudentProfile7({Key? key}) : super(key: key);
 
   @override
-  _StudentProfile4State createState() => _StudentProfile4State();
+  _StudentProfile7State createState() => _StudentProfile7State();
 }
 
-class _StudentProfile4State extends State<StudentProfile4> {
+class _StudentProfile7State extends State<StudentProfile7> {
   final _textfonts = TextStyle(
       fontStyle: FontStyle.normal, fontSize: 24, fontWeight: FontWeight.w600);
 
@@ -58,10 +58,10 @@ class _StudentProfile4State extends State<StudentProfile4> {
           ListView.builder(
               physics: ScrollPhysics(),
               shrinkWrap: true,
-              itemCount: studentList4.length,
+              itemCount: studentList5.length,
               itemBuilder: (context, index) {
-                Students4 students4 = studentList4[index];
-                studentList4.sort((a, b) => a.name.compareTo(b.name));
+                Students7 students7 = studentList7[index];
+                studentList7.sort((a, b) => a.name.compareTo(b.name));
                 return Container(
                   height: 100,
                   child: Padding(
@@ -74,14 +74,14 @@ class _StudentProfile4State extends State<StudentProfile4> {
                       child: Center(
                         child: ListTile(
                           title: Text(
-                            students4.name,
+                            students7.name,
                             style: _cardFonts,
                           ),
                           leading: CircleAvatar(
                             radius: 30,
                             backgroundColor: Colors.grey[200],
                             backgroundImage: AssetImage(
-                              students4.image,
+                              students7.image,
                             ),
                           ),
                           trailing: Icon(
@@ -91,8 +91,8 @@ class _StudentProfile4State extends State<StudentProfile4> {
                           ),
                           onTap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => StudentDetails4(
-                                      students4: students4,
+                                builder: (context) => StudentDetails7(
+                                      students7: students7,
                                     )));
                           },
                         ),
@@ -109,7 +109,7 @@ class _StudentProfile4State extends State<StudentProfile4> {
                 TextButton(
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => StudentProfile3()));
+                        builder: (context) => StudentProfile7()));
                   },
                   child: Row(
                     children: [
@@ -125,7 +125,7 @@ class _StudentProfile4State extends State<StudentProfile4> {
                 TextButton(
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => StudentProfile5()));
+                        builder: (context) => StudentProfile8()));
                   },
                   child: Row(
                     children: [

@@ -1,14 +1,13 @@
 // ignore_for_file: prefer_const_constructors, curly_braces_in_flow_control_structures, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, avoid_returning_null_for_void
 
 import 'package:flutter/material.dart';
-import 'package:legal_achievers/model/students/students_model_2.dart';
 import 'package:legal_achievers/model/students/students_model_3.dart';
 import 'package:legal_achievers/views/gallery.dart';
 import 'package:legal_achievers/views/partial_views/student_details/student_details3.dart';
+import 'package:legal_achievers/views/student_view/student_profile4.dart';
 
 import '../about.dart';
 import '../articles.dart';
-import 'student_profile.dart';
 import 'student_profile2.dart';
 
 class StudentProfile3 extends StatefulWidget {
@@ -59,10 +58,10 @@ class _StudentProfile3State extends State<StudentProfile3> {
           ListView.builder(
               physics: ScrollPhysics(),
               shrinkWrap: true,
-              itemCount: studentList2.length,
+              itemCount: studentList3.length,
               itemBuilder: (context, index) {
                 Students3 students3 = studentList3[index];
-                studentList2.sort((a, b) => a.name.compareTo(b.name));
+                studentList3.sort((a, b) => a.name.compareTo(b.name));
                 return Container(
                   height: 100,
                   child: Padding(
@@ -126,7 +125,7 @@ class _StudentProfile3State extends State<StudentProfile3> {
                 TextButton(
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => StudentProfile3()));
+                        builder: (context) => StudentProfile4()));
                   },
                   child: Row(
                     children: [

@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, curly_braces_in_flow_control_structures, avoid_returning_null_for_void, prefer_const_constructors, sized_box_for_whitespace, non_constant_identifier_names, avoid_unnecessary_containers
+// ignore_for_file: prefer_const_literals_to_create_immutables, curly_braces_in_flow_control_structures, avoid_returning_null_for_void, prefer_const_constructors, sized_box_for_whitespace, non_constant_identifier_names, avoid_unnecessary_containers, unused_import, unused_field
 
 import 'package:flutter/material.dart';
 import 'package:legal_achievers/model/articles_models/entrepreneur_model.dart';

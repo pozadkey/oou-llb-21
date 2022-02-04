@@ -1,4 +1,4 @@
-// ignore_for_file: curly_braces_in_flow_control_structures, prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_returning_null_for_void, non_constant_identifier_names, avoid_unnecessary_containers, sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, non_constant_identifier_names, curly_braces_in_flow_control_structures, avoid_returning_null_for_void, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:legal_achievers/views/partial_views/pictures/cultural_pic.dart';
@@ -24,20 +24,11 @@ class _GalleryState extends State<Gallery> {
   final _textfonts = TextStyle(
       fontStyle: FontStyle.normal, fontSize: 24, fontWeight: FontWeight.w600);
 
-  final _cardFonts = TextStyle(
-      fontStyle: FontStyle.normal,
-      fontSize: 14,
-      color: Colors.white,
-      fontWeight: FontWeight.w500);
-
   final _sub_header_fonts = TextStyle(
       fontStyle: FontStyle.normal, fontSize: 16, fontWeight: FontWeight.w600);
 
   final _bottomNavFonts =
       TextStyle(fontStyle: FontStyle.normal, fontWeight: FontWeight.w500);
-
-  final _headerfonts = TextStyle(
-      fontStyle: FontStyle.normal, fontSize: 30, fontWeight: FontWeight.w700);
 
   @override
   Widget build(BuildContext context) {
