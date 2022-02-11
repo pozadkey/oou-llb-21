@@ -33,7 +33,7 @@ class _StudentProfile12State extends State<StudentProfile12> {
   final _buttonfonts = TextStyle(
       fontStyle: FontStyle.normal,
       fontSize: 14,
-      color: Colors.white,
+      color: Colors.grey[500],
       fontWeight: FontWeight.w600);
 
   @override

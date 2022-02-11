@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:legal_achievers/model/students/students_model_17.dart';
 import 'package:legal_achievers/views/gallery.dart';
 import 'package:legal_achievers/views/partial_views/student_details/student_details17.dart';
-import 'package:legal_achievers/views/student_view/student_profile15.dart';
+import 'package:legal_achievers/views/student_view/student_profile16.dart';
+import 'package:legal_achievers/views/student_view/student_profile18.dart';
 
 import '../about.dart';
 import '../articles.dart';
@@ -32,7 +33,7 @@ class _StudentProfile17State extends State<StudentProfile17> {
   final _buttonfonts = TextStyle(
       fontStyle: FontStyle.normal,
       fontSize: 14,
-      color: Colors.white,
+      color: Colors.grey[500],
       fontWeight: FontWeight.w600);
 
   @override
@@ -108,7 +109,7 @@ class _StudentProfile17State extends State<StudentProfile17> {
                 TextButton(
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => StudentProfile15()));
+                        builder: (context) => StudentProfile16()));
                   },
                   child: Row(
                     children: [
@@ -123,8 +124,8 @@ class _StudentProfile17State extends State<StudentProfile17> {
                 ),
                 TextButton(
                   onPressed: () {
-                    /*Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => StudentProfile17()));*/
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => StudentProfile18()));
                   },
                   child: Row(
                     children: [

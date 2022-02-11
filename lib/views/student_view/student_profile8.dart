@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors, curly_braces_in_flow_control_structures, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, avoid_returning_null_for_void
 
 import 'package:flutter/material.dart';
-import 'package:legal_achievers/model/students/students_model_5.dart';
 import 'package:legal_achievers/model/students/students_model_8.dart';
 import 'package:legal_achievers/views/gallery.dart';
 import 'package:legal_achievers/views/partial_views/student_details/student_details8.dart';
@@ -34,7 +33,7 @@ class _StudentProfile8State extends State<StudentProfile8> {
   final _buttonfonts = TextStyle(
       fontStyle: FontStyle.normal,
       fontSize: 14,
-      color: Colors.white,
+      color: Colors.grey[500],
       fontWeight: FontWeight.w600);
 
   @override
@@ -59,7 +58,7 @@ class _StudentProfile8State extends State<StudentProfile8> {
           ListView.builder(
               physics: ScrollPhysics(),
               shrinkWrap: true,
-              itemCount: studentList5.length,
+              itemCount: studentList8.length,
               itemBuilder: (context, index) {
                 Students8 students8 = studentList8[index];
                 studentList8.sort((a, b) => a.name.compareTo(b.name));

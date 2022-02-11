@@ -32,7 +32,7 @@ class _StudentProfileState extends State<StudentProfile> {
   final _buttonfonts = TextStyle(
       fontStyle: FontStyle.normal,
       fontSize: 14,
-      color: Colors.white,
+      color: Colors.grey[500],
       fontWeight: FontWeight.w600);
 
   @override
@@ -58,6 +58,8 @@ class _StudentProfileState extends State<StudentProfile> {
               physics: ScrollPhysics(),
               shrinkWrap: true,
               itemCount: studentList.length,
+              addAutomaticKeepAlives: false,
+              addRepaintBoundaries: false,
               itemBuilder: (context, index) {
                 Students students = studentList[index];
                 studentList.sort((a, b) => a.name.compareTo(b.name));

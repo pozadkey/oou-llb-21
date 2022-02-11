@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors, curly_braces_in_flow_control_structures, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, avoid_returning_null_for_void
 
 import 'package:flutter/material.dart';
-import 'package:legal_achievers/model/students/students_model_5.dart';
 import 'package:legal_achievers/model/students/students_model_7.dart';
 import 'package:legal_achievers/views/gallery.dart';
 import 'package:legal_achievers/views/partial_views/student_details/student_details7.dart';
@@ -9,6 +8,7 @@ import 'package:legal_achievers/views/student_view/student_profile8.dart';
 
 import '../about.dart';
 import '../articles.dart';
+import 'student_profile6.dart';
 
 class StudentProfile7 extends StatefulWidget {
   const StudentProfile7({Key? key}) : super(key: key);
@@ -33,7 +33,7 @@ class _StudentProfile7State extends State<StudentProfile7> {
   final _buttonfonts = TextStyle(
       fontStyle: FontStyle.normal,
       fontSize: 14,
-      color: Colors.white,
+      color: Colors.grey[500],
       fontWeight: FontWeight.w600);
 
   @override
@@ -58,7 +58,7 @@ class _StudentProfile7State extends State<StudentProfile7> {
           ListView.builder(
               physics: ScrollPhysics(),
               shrinkWrap: true,
-              itemCount: studentList5.length,
+              itemCount: studentList7.length,
               itemBuilder: (context, index) {
                 Students7 students7 = studentList7[index];
                 studentList7.sort((a, b) => a.name.compareTo(b.name));
@@ -109,7 +109,7 @@ class _StudentProfile7State extends State<StudentProfile7> {
                 TextButton(
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => StudentProfile7()));
+                        builder: (context) => StudentProfile6()));
                   },
                   child: Row(
                     children: [
