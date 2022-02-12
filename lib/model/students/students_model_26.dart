@@ -58,4 +58,23 @@ List<Students26> studentList26 = [
       favorite_course: 'Criminal law',
       class_crush: 'Nobody',
       parting_words: 'The best is yet to come!'),
+  Students26(
+      image: 'assets/students/155.jpg',
+      name: 'Onanuga Daniel Oluwadara',
+      nickname: 'Boss, impeccable Danny of Lagos',
+      dob: '4/8',
+      state_of_origin: 'Ogun',
+      mobile_number: 08179856102,
+      email: 'onanuga41@gmail.com',
+      linkedIn: '-',
+      instagram: 'Impeccable_danny',
+      facebook: 'Daniel O Onanuga ',
+      twitter: '-',
+      position_held: '-',
+      skills: '-',
+      hobbies: 'Working, singing,cooking',
+      favorite_course: 'Maritime law, petroleum law, constitutional law',
+      class_crush: 'None',
+      parting_words:
+          'Studying in oou was hard,but thank God I pulled through.'),
 ];
