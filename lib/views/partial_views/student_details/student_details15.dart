@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:legal_achievers/model/students/students_model_15.dart';
 
+import '../pictures/fullscreen/fullscreen.dart';
+
 class StudentDetails15 extends StatelessWidget {
   final Students15 students15;
 
@@ -38,11 +40,21 @@ class StudentDetails15 extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                   child: Center(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(
-                        students15.image,
-                        height: 250,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  FullScreen(photos: students15.image),
+                            ));
+                      },
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.asset(
+                          students15.image,
+                          height: 250,
+                        ),
                       ),
                     ),
                   ),

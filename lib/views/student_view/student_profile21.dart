@@ -34,7 +34,10 @@ class _StudentProfile21State extends State<StudentProfile21> {
       TextStyle(fontStyle: FontStyle.normal, fontWeight: FontWeight.w500);
 
   final _buttonfonts = TextStyle(
-      fontStyle: FontStyle.normal, fontSize: 14, fontWeight: FontWeight.w600);
+      fontStyle: FontStyle.normal,
+      fontSize: 14,
+      color: Colors.grey[500],
+      fontWeight: FontWeight.w600);
 
   @override
   Widget build(BuildContext context) {

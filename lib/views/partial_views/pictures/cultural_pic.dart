@@ -77,12 +77,10 @@ class CulturalPic extends StatelessWidget {
                         height: 200,
                         child: GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) =>
-                                      FullScreen(photos: groupPics.image),
-                                ));
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => FullScreen(
+                                      photos: groupPics.image,
+                                    )));
                           },
                           child: Card(
                               child: Image.asset(

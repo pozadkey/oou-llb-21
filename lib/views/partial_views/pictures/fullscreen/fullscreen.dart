@@ -10,13 +10,8 @@ class FullScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(60),
-        child: SafeArea(
-          child: AppBar(
-            elevation: 0,
-          ),
-        ),
+      appBar: AppBar(
+        elevation: 0,
       ),
       body: PhotoView(
         imageProvider: AssetImage(photos),
