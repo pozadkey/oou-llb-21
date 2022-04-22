@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyThemes {
@@ -10,12 +11,17 @@ class MyThemes {
     ).apply(
       bodyColor: Colors.grey[400],
     ),
+    cupertinoOverrideTheme: CupertinoThemeData(
+        barBackgroundColor: Colors.black,
+        primaryColor: Colors.yellow[700],
+        textTheme: CupertinoTextThemeData(primaryColor: Colors.white)),
     scaffoldBackgroundColor: Colors.black,
+    backgroundColor: Colors.black,
     fontFamily: 'Poppins',
     colorScheme: ColorScheme.dark(),
     appBarTheme: AppBarTheme(
         iconTheme: IconThemeData(color: Colors.yellow[700]),
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.transparent,
         titleTextStyle: TextStyle(
             color: Colors.yellow[700],
             fontSize: 30,
@@ -32,12 +38,16 @@ class MyThemes {
     ).apply(
       bodyColor: Colors.grey[900],
     ),
+    cupertinoOverrideTheme: CupertinoThemeData(
+        barBackgroundColor: Colors.white,
+        primaryColor: Colors.yellow[700],
+        textTheme: CupertinoTextThemeData(primaryColor: Colors.yellow)),
     scaffoldBackgroundColor: Colors.white,
     fontFamily: 'Poppins',
     colorScheme: ColorScheme.light(),
     appBarTheme: AppBarTheme(
         iconTheme: IconThemeData(color: Colors.yellow[700]),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
         titleTextStyle: TextStyle(
             color: Colors.yellow[700],
             fontSize: 30,

@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:legal_achievers/views/navigation/navbar_mobile.dart';
+import 'package:legal_achievers/views/navigation/navbar_tab.dart';
 
 import 'themes/themes.dart';
 import 'views/student_view/student_profile.dart';
@@ -17,6 +19,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    double width = 481;
     return ValueListenableBuilder<ThemeMode>(
         valueListenable: themeNotifier,
         builder: (_, ThemeMode currentMode, __) {
@@ -27,7 +30,15 @@ class MyApp extends StatelessWidget {
               //themeMode: currentMode,
               theme: MyThemes.lightTheme,
               darkTheme: MyThemes.darkTheme,
-              home: StudentProfile(),
+              home: LayoutBuilder(
+                builder: ((context, constraints) {
+                  if (width <= 480) {
+                    return NavbarMobile();
+                  } else {
+                    return NavBarTab();
+                  }
+                }),
+              ),
               routes: <String, WidgetBuilder>{
                 'student': (BuildContext context) => StudentProfile(),
               });

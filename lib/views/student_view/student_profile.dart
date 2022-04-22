@@ -4,10 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:legal_achievers/model/students/students_model.dart';
 import 'package:legal_achievers/views/gallery.dart';
 
-import '../about.dart';
-import '../articles.dart';
+import '../about/about_mobile.dart';
+import '../articles/articles_mobile.dart';
 import '../partial_views/student_details/student_details.dart';
-import 'student_profile2.dart';
 
 class StudentProfile extends StatefulWidget {
   const StudentProfile({Key? key}) : super(key: key);
@@ -110,7 +109,7 @@ class _StudentProfileState extends State<StudentProfile> {
                 TextButton(
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => StudentProfile2()));
+                        builder: (context) => StudentProfile()));
                   },
                   child: Row(
                     children: [
@@ -127,52 +126,6 @@ class _StudentProfileState extends State<StudentProfile> {
             ),
           )
         ],
-      ),
-      bottomNavigationBar: PreferredSize(
-        preferredSize: Size.fromHeight(70),
-        child: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          selectedItemColor: Colors.yellow[700],
-          unselectedItemColor: Colors.grey[500],
-          selectedFontSize: 10,
-          unselectedFontSize: 9,
-          showUnselectedLabels: true,
-          selectedLabelStyle: _bottomNavFonts,
-          unselectedLabelStyle: _bottomNavFonts,
-          elevation: 3,
-          iconSize: 25,
-          currentIndex: 0,
-          onTap: (value) {
-            if (value == 0) return null;
-            if (value == 1)
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => Gallery()));
-            if (value == 2)
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => Articles()));
-            if (value == 3)
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => About()));
-          },
-          items: [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home_rounded),
-              label: 'Home',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.image_rounded),
-              label: 'Gallery',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.article_rounded),
-              label: 'Articles',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.info_outlined),
-              label: 'About',
-            ),
-          ],
-        ),
       ),
     );
   }
