@@ -16,13 +16,13 @@ class NoteDetailsTab extends StatelessWidget {
         fontWeight: FontWeight.w400,
         letterSpacing: -0.24);
 
-    final _header_fonts = TextStyle(color: Colors.yellow[700]);
+    final _headerfonts = TextStyle(color: Colors.yellow[700]);
 
     return CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
           middle: Text(
         '${note.title} ',
-        style: _header_fonts,
+        style: _headerfonts,
       )),
       child: SafeArea(
         child: Scaffold(

@@ -5,9 +5,10 @@ import 'package:legal_achievers/views/about/about_mobile.dart';
 import 'package:legal_achievers/views/about/about_tab.dart';
 import 'package:legal_achievers/views/articles/articles_mobile.dart';
 import 'package:legal_achievers/views/articles/articles_tab.dart';
-import 'package:legal_achievers/views/student_view/student_profile.dart';
+import 'package:legal_achievers/views/gallery/gallery_tab.dart';
 
-import '../gallery.dart';
+import '../gallery/gallery_mobile.dart';
+import '../students/student_profile.dart';
 
 class NavBarTab extends StatefulWidget {
   const NavBarTab({Key? key}) : super(key: key);
@@ -76,7 +77,7 @@ class _NavBarTabState extends State<NavBarTab> {
       case 0:
         return StudentProfile();
       case 1:
-        return Gallery();
+        return GalleryTab();
       case 2:
         return ArticlesTab();
       case 3:

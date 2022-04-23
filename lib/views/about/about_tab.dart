@@ -2,7 +2,6 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:legal_achievers/views/about/note_details.dart';
 
 import '../../model/articles_models/note_model.dart';
 import 'note_details_tab.dart';

@@ -7,7 +7,6 @@ import '../../model/articles_models/entrepreneur_model.dart';
 import '../../model/articles_models/poem_model.dart';
 import '../../model/articles_models/story_model.dart';
 import '../about/about_mobile.dart';
-import '../gallery.dart';
 
 import 'poems/poem_details.dart';
 import 'entrepreneurs/entrepreneur_details.dart';
@@ -42,7 +41,7 @@ class _ArticlesMobileState extends State<ArticlesMobile> {
         headerSliverBuilder: (context, innerBoxIsScrolled) => [
           CupertinoSliverNavigationBar(
             largeTitle: Text(
-              'ArticlesMobile',
+              'Articles',
               style: _header_fonts,
             ),
             automaticallyImplyLeading: false,
@@ -51,14 +50,14 @@ class _ArticlesMobileState extends State<ArticlesMobile> {
         body: CupertinoScrollbar(
           thickness: 2,
           child: SingleChildScrollView(
-            child: Container(
+            child: Padding(
               padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
               child: Column(
                 children: [
                   Row(
                     children: [
                       Padding(
-                        padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                        padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
                         child: Text(
                           'ENTREPRENEUR\'S CORNER',
                           style: _sub_header_fonts,

@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:legal_achievers/model/students/students_model.dart';
 
-import '../pictures/fullscreen/fullscreen.dart';
+import '../../gallery/sub_gallery/fullscreen/fullscreen.dart';
 
 class StudentDetails extends StatelessWidget {
   final Students students;

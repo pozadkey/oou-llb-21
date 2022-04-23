@@ -2,11 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:legal_achievers/model/students/students_model.dart';
-import 'package:legal_achievers/views/gallery.dart';
+import 'package:legal_achievers/views/gallery/gallery_mobile.dart';
 
 import '../about/about_mobile.dart';
 import '../articles/articles_mobile.dart';
-import '../partial_views/student_details/student_details.dart';
+import 'sub_students/student_details.dart';
 
 class StudentProfile extends StatefulWidget {
   const StudentProfile({Key? key}) : super(key: key);

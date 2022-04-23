@@ -3,9 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:legal_achievers/views/navigation/navbar_mobile.dart';
 import 'package:legal_achievers/views/navigation/navbar_tab.dart';
-
 import 'themes/themes.dart';
-import 'views/student_view/student_profile.dart';
+import 'views/students/student_profile.dart';
 
 void main() {
   runApp(const MyApp());

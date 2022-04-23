@@ -5,9 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:legal_achievers/model/articles_models/note_model.dart';
 
 import '../articles/articles_mobile.dart';
-import '../gallery.dart';
+import '../gallery/gallery_mobile.dart';
 import 'note_details.dart';
-import '../student_view/student_profile.dart';
 
 class AboutMobile extends StatefulWidget {
   const AboutMobile({Key? key}) : super(key: key);
@@ -57,7 +56,7 @@ class _AboutMobileState extends State<AboutMobile> {
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 5, 0, 10),
                     child: Divider(
-                      color: Colors.grey[400],
+                      color: Colors.grey[300],
                     ),
                   ),
                   Row(
