@@ -5,7 +5,7 @@ import 'package:legal_achievers/views/about/about_mobile.dart';
 import 'package:legal_achievers/views/articles/articles_mobile.dart';
 import 'package:legal_achievers/views/gallery/gallery_mobile.dart';
 
-import '../students/student_profile.dart';
+import '../students/student_profile_mobile.dart';
 
 class NavbarMobile extends StatefulWidget {
   const NavbarMobile({Key? key}) : super(key: key);
@@ -24,7 +24,7 @@ class _NavbarMobileState extends State<NavbarMobile> {
     super.initState();
     _selectedPageIndex = 0;
 
-    _pages = [StudentProfile(), GalleryMobile(), ArticlesMobile(), AboutMobile()];
+    _pages = [StudentProfileMobile(), GalleryMobile(), ArticlesMobile(), AboutMobile()];
 
     _pageController = PageController(initialPage: _selectedPageIndex);
   }

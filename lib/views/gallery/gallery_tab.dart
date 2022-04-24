@@ -23,11 +23,11 @@ class GalleryTab extends StatefulWidget {
 }
 
 class _GalleryTabState extends State<GalleryTab> {
-  final _sub_header_fonts = TextStyle(
+ final _sub_header_fonts = TextStyle(
       fontStyle: FontStyle.normal,
-      fontSize: 17,
+      fontSize: 13,
       fontWeight: FontWeight.w500,
-      letterSpacing: -0.41);
+      letterSpacing: -0.08);
 
   final _headerfonts = TextStyle(color: Colors.yellow[700]);
 

@@ -4,8 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:legal_achievers/views/gallery/sub_gallery/cultural_pic.dart';
 import 'package:legal_achievers/views/gallery/sub_gallery/group_pic.dart';
-import '../about/about_mobile.dart';
-import '../articles/articles_mobile.dart';
 import 'sub_gallery/dinner_pic.dart';
 import 'sub_gallery/jersey_pic.dart';
 import 'sub_gallery/outing_pic.dart';
@@ -22,9 +20,9 @@ class GalleryMobile extends StatefulWidget {
 class _GalleryMobileState extends State<GalleryMobile> {
   final _sub_header_fonts = TextStyle(
       fontStyle: FontStyle.normal,
-      fontSize: 17,
+      fontSize: 13,
       fontWeight: FontWeight.w500,
-      letterSpacing: -0.41);
+      letterSpacing: -0.08);
 
   final _headerfonts = TextStyle(color: Colors.yellow[700]);
 

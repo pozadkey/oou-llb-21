@@ -25,9 +25,9 @@ class _ArticlesTabState extends State<ArticlesTab> {
 
   final _sub_header_fonts = TextStyle(
       fontStyle: FontStyle.normal,
-      fontSize: 17,
+      fontSize: 13,
       fontWeight: FontWeight.w500,
-      letterSpacing: -0.41);
+      letterSpacing: -0.08);
 
   final _headerfonts = TextStyle(color: Colors.yellow[700]);
 
@@ -233,6 +233,7 @@ class _ArticlesTabState extends State<ArticlesTab> {
             child: Padding(
               padding: EdgeInsets.fromLTRB(15, 10, 15, 30),
               child: ListView(
+                primary: false,
                 children: [
                   Text('Full name: \n${entrepreneurList[0].name}',
                       style: _textfonts),

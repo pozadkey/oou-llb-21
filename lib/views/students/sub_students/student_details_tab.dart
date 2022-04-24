@@ -6,10 +6,10 @@ import 'package:legal_achievers/model/students/students_model.dart';
 
 import '../../gallery/sub_gallery/fullscreen/fullscreen.dart';
 
-class StudentDetails extends StatelessWidget {
+class StudentDetailsTab extends StatelessWidget {
   final Students students;
 
-  StudentDetails({Key? key, required this.students}) : super(key: key);
+  StudentDetailsTab({Key? key, required this.students}) : super(key: key);
 
   @override
   final _textfonts = TextStyle(
@@ -32,6 +32,7 @@ class StudentDetails extends StatelessWidget {
             body: CupertinoScrollbar(
           thickness: 2,
           child: SingleChildScrollView(
+            primary: false,
             child: Container(
               padding: EdgeInsets.fromLTRB(15, 0, 15, 40),
               child: Column(

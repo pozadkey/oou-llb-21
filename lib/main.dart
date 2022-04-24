@@ -1,12 +1,18 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:legal_achievers/views/navigation/navbar_mobile.dart';
 import 'package:legal_achievers/views/navigation/navbar_tab.dart';
 import 'themes/themes.dart';
 import 'views/students/student_profile.dart';
+import 'views/students/student_profile_mobile.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+
   runApp(const MyApp());
 }
 
@@ -18,7 +24,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    double width = 481;
+    double width = 480;
     return ValueListenableBuilder<ThemeMode>(
         valueListenable: themeNotifier,
         builder: (_, ThemeMode currentMode, __) {
@@ -31,7 +37,7 @@ class MyApp extends StatelessWidget {
               darkTheme: MyThemes.darkTheme,
               home: LayoutBuilder(
                 builder: ((context, constraints) {
-                  if (width <= 480) {
+                  if (MediaQuery.of(context).size.width <= width) {
                     return NavbarMobile();
                   } else {
                     return NavBarTab();

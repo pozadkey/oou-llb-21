@@ -24,9 +24,9 @@ class _AboutMobileState extends State<AboutMobile> {
 
   final _sub_header_fonts = TextStyle(
       fontStyle: FontStyle.normal,
-      fontSize: 17,
+      fontSize: 13,
       fontWeight: FontWeight.w500,
-      letterSpacing: -0.41);
+      letterSpacing: -0.08);
 
   final _header_fonts = TextStyle(color: Colors.yellow[700]);
 

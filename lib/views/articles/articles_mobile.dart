@@ -28,11 +28,11 @@ class _ArticlesMobileState extends State<ArticlesMobile> {
 
   final _sub_header_fonts = TextStyle(
       fontStyle: FontStyle.normal,
-      fontSize: 17,
+      fontSize: 13,
       fontWeight: FontWeight.w500,
-      letterSpacing: -0.41);
+      letterSpacing: -0.08);
 
-  final _header_fonts = TextStyle(color: Colors.yellow[700]);
+  final _headerfonts = TextStyle(color: Colors.yellow[700]);
 
   @override
   Widget build(BuildContext context) {
@@ -40,9 +40,10 @@ class _ArticlesMobileState extends State<ArticlesMobile> {
       child: NestedScrollView(
         headerSliverBuilder: (context, innerBoxIsScrolled) => [
           CupertinoSliverNavigationBar(
+            heroTag: 'screenA',
             largeTitle: Text(
               'Articles',
-              style: _header_fonts,
+              style: _headerfonts,
             ),
             automaticallyImplyLeading: false,
           )
