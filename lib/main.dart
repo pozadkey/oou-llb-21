@@ -6,7 +6,6 @@ import 'package:legal_achievers/views/navigation/navbar_mobile.dart';
 import 'package:legal_achievers/views/navigation/navbar_tab.dart';
 import 'themes/themes.dart';
 import 'views/students/student_profile.dart';
-import 'views/students/student_profile_mobile.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

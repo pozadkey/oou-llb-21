@@ -11,8 +11,6 @@ import 'package:legal_achievers/views/gallery/sub_gallery/tablet/signout_pic_tab
 import 'package:legal_achievers/views/gallery/sub_gallery/tablet/val_pic_tab.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../model/gallery_model/group_model.dart';
-import '../about/about_mobile.dart';
-import '../articles/articles_mobile.dart';
 import 'sub_gallery/fullscreen/fullscreen.dart';
 
 class GalleryTab extends StatefulWidget {

@@ -3,10 +3,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:legal_achievers/model/students/students_model.dart';
-import 'package:legal_achievers/views/gallery/gallery_mobile.dart';
 
-import '../about/about_mobile.dart';
-import '../articles/articles_mobile.dart';
 import 'sub_students/student_details.dart';
 
 class StudentProfileMobile extends StatefulWidget {
@@ -16,7 +13,8 @@ class StudentProfileMobile extends StatefulWidget {
   _StudentProfileMobileState createState() => _StudentProfileMobileState();
 }
 
-class _StudentProfileMobileState extends State<StudentProfileMobile> {
+class _StudentProfileMobileState extends State<StudentProfileMobile>
+    with AutomaticKeepAliveClientMixin<StudentProfileMobile> {
   final TextEditingController? _searchText = TextEditingController();
 
   final _textfonts = TextStyle(
@@ -30,7 +28,11 @@ class _StudentProfileMobileState extends State<StudentProfileMobile> {
   List<Students> searchedStudents = [];
 
   @override
+  bool get wantKeepAlive => true;
+
+  @override
   Widget build(BuildContext context) {
+    super.build(context);
     return CupertinoPageScaffold(
       child: NestedScrollView(
         headerSliverBuilder: (context, innerBoxIsScrolled) => [
@@ -46,12 +48,12 @@ class _StudentProfileMobileState extends State<StudentProfileMobile> {
           thickness: 2,
           child: SingleChildScrollView(
             child: Padding(
-              padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+              padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
               child: _searchText!.text.isNotEmpty && searchedStudents.isEmpty
                   ? Column(
                       children: [
                         Padding(
-                          padding: EdgeInsets.fromLTRB(0, 15, 0, 20),
+                          padding: EdgeInsets.fromLTRB(5, 15, 5, 20),
                           child: CupertinoSearchTextField(
                             placeholder: 'Search students',
                             controller: _searchText,
@@ -66,7 +68,7 @@ class _StudentProfileMobileState extends State<StudentProfileMobile> {
                             },
                           ),
                         ),
-                        //Text('not found')
+                     
                         Center(
                           child: Column(
                             children: [
@@ -87,7 +89,7 @@ class _StudentProfileMobileState extends State<StudentProfileMobile> {
                   : Column(
                       children: [
                         Padding(
-                          padding: EdgeInsets.fromLTRB(0, 15, 0, 0),
+                          padding: EdgeInsets.fromLTRB(5, 15, 5, 5),
                           child: CupertinoSearchTextField(
                             placeholder: 'Search students',
                             controller: _searchText,
@@ -156,6 +158,9 @@ class _StudentProfileMobileState extends State<StudentProfileMobile> {
                                 ),
                               );
                             }),
+                        Divider(
+                          color: Colors.grey[300],
+                        ),
                       ],
                     ),
             ),

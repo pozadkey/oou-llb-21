@@ -19,7 +19,8 @@ class ArticlesMobile extends StatefulWidget {
   _ArticlesMobileState createState() => _ArticlesMobileState();
 }
 
-class _ArticlesMobileState extends State<ArticlesMobile> {
+class _ArticlesMobileState extends State<ArticlesMobile>
+    with AutomaticKeepAliveClientMixin<ArticlesMobile> {
   final _textfonts = TextStyle(
       fontStyle: FontStyle.normal,
       fontSize: 15,
@@ -35,7 +36,11 @@ class _ArticlesMobileState extends State<ArticlesMobile> {
   final _headerfonts = TextStyle(color: Colors.yellow[700]);
 
   @override
+  bool get wantKeepAlive => true;
+
+  @override
   Widget build(BuildContext context) {
+    super.build(context);
     return CupertinoPageScaffold(
       child: NestedScrollView(
         headerSliverBuilder: (context, innerBoxIsScrolled) => [

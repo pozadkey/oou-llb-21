@@ -14,7 +14,8 @@ class MyThemes {
     cupertinoOverrideTheme: CupertinoThemeData(
         barBackgroundColor: Colors.black,
         primaryColor: Colors.yellow[700],
-        textTheme: CupertinoTextThemeData(primaryColor: Colors.white)),
+        textTheme: CupertinoTextThemeData(
+            primaryColor: Color.fromARGB(255, 251, 192, 45))),
     scaffoldBackgroundColor: Colors.black,
     backgroundColor: Colors.black,
     fontFamily: 'Poppins',
@@ -41,7 +42,8 @@ class MyThemes {
     cupertinoOverrideTheme: CupertinoThemeData(
         barBackgroundColor: Colors.white,
         primaryColor: Colors.yellow[700],
-        textTheme: CupertinoTextThemeData(primaryColor: Colors.yellow)),
+        textTheme: CupertinoTextThemeData(
+            primaryColor: Color.fromARGB(255, 251, 192, 45))),
     scaffoldBackgroundColor: Colors.white,
     fontFamily: 'Poppins',
     colorScheme: ColorScheme.light(),

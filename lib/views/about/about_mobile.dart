@@ -3,9 +3,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:legal_achievers/model/articles_models/note_model.dart';
-
-import '../articles/articles_mobile.dart';
-import '../gallery/gallery_mobile.dart';
 import 'note_details.dart';
 
 class AboutMobile extends StatefulWidget {
@@ -15,7 +12,8 @@ class AboutMobile extends StatefulWidget {
   _AboutMobileState createState() => _AboutMobileState();
 }
 
-class _AboutMobileState extends State<AboutMobile> {
+class _AboutMobileState extends State<AboutMobile>
+    with AutomaticKeepAliveClientMixin<AboutMobile> {
   final _textfonts = TextStyle(
       fontStyle: FontStyle.normal,
       fontSize: 15,
@@ -30,12 +28,19 @@ class _AboutMobileState extends State<AboutMobile> {
 
   final _header_fonts = TextStyle(color: Colors.yellow[700]);
 
+  int selectedIndex = 0;
+
+  @override
+  bool get wantKeepAlive => true;
+
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return CupertinoPageScaffold(
       child: NestedScrollView(
         headerSliverBuilder: (context, innerBoxIsScrolled) => [
           CupertinoSliverNavigationBar(
+            heroTag: 'aboutMobile',
             largeTitle: Text('About', style: _header_fonts),
             automaticallyImplyLeading: false,
           )
@@ -87,6 +92,8 @@ class _AboutMobileState extends State<AboutMobile> {
                       Note notes = noteList[index];
                       return Center(
                         child: ListTile(
+                          tileColor:
+                              selectedIndex == 0 ? Colors.green : Colors.blue,
                           title: Text(
                             notes.title,
                             style: _textfonts,

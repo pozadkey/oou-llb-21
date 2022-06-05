@@ -16,7 +16,8 @@ class ArticlesTab extends StatefulWidget {
   State<ArticlesTab> createState() => _ArticlesTabState();
 }
 
-class _ArticlesTabState extends State<ArticlesTab> {
+class _ArticlesTabState extends State<ArticlesTab>
+    with AutomaticKeepAliveClientMixin<ArticlesTab> {
   final _textfonts = TextStyle(
       fontStyle: FontStyle.normal,
       fontSize: 15,
@@ -31,8 +32,17 @@ class _ArticlesTabState extends State<ArticlesTab> {
 
   final _headerfonts = TextStyle(color: Colors.yellow[700]);
 
+  late int selectedIndex = 0;
+  late int storyIndex = -1;
+  late int poemIndex = -1;
+
+  @override
+  bool get wantKeepAlive => true;
+
   @override
   Widget build(BuildContext context) {
+    super.build(context);
+
     return Row(
       children: [
         Flexible(
@@ -79,6 +89,9 @@ class _ArticlesTabState extends State<ArticlesTab> {
                                     entrepreneurList[index];
                                 return Center(
                                   child: ListTile(
+                                    tileColor: selectedIndex == index
+                                        ? Colors.yellow[700]
+                                        : null,
                                     title: Text(
                                       entrepreneurs.title,
                                       style: _textfonts,
@@ -90,6 +103,9 @@ class _ArticlesTabState extends State<ArticlesTab> {
                                     ),
                                     onTap: () {
                                       setState(() {
+                                        selectedIndex = index;
+                                        storyIndex = -1;
+                                        poemIndex = -1;
                                         sidePage = EntrepreneurDetailsTab(
                                             entrepreneurs: entrepreneurs);
                                       });
@@ -123,6 +139,9 @@ class _ArticlesTabState extends State<ArticlesTab> {
                                 Story stories = storyList[index];
                                 return Center(
                                   child: ListTile(
+                                    tileColor: storyIndex == index
+                                        ? Colors.yellow[700]
+                                        : null,
                                     title: Text(
                                       stories.title,
                                       style: _textfonts,
@@ -134,6 +153,9 @@ class _ArticlesTabState extends State<ArticlesTab> {
                                     ),
                                     onTap: () {
                                       setState(() {
+                                        selectedIndex = -1;
+                                        storyIndex = index;
+                                        poemIndex = -1;
                                         sidePage =
                                             StoryDetailsTab(story: stories);
                                       });
@@ -170,6 +192,9 @@ class _ArticlesTabState extends State<ArticlesTab> {
                                 Poem poems = poemList[index];
                                 return Center(
                                   child: ListTile(
+                                    tileColor: poemIndex == index
+                                        ? Colors.yellow[700]
+                                        : null,
                                     title: Text(
                                       poems.title,
                                       style: _textfonts,
@@ -181,6 +206,9 @@ class _ArticlesTabState extends State<ArticlesTab> {
                                     ),
                                     onTap: () {
                                       setState(() {
+                                        selectedIndex = -1;
+                                        storyIndex = -1;
+                                        poemIndex = index;
                                         sidePage = PoemDetailsTab(poem: poems);
                                       });
                                     },

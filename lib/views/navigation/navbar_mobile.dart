@@ -14,7 +14,8 @@ class NavbarMobile extends StatefulWidget {
   State<NavbarMobile> createState() => _NavbarMobileState();
 }
 
-class _NavbarMobileState extends State<NavbarMobile> {
+class _NavbarMobileState extends State<NavbarMobile>
+    with AutomaticKeepAliveClientMixin<NavbarMobile> {
   var _selectedPageIndex;
   late List<Widget> _pages;
   late PageController _pageController;
@@ -23,8 +24,12 @@ class _NavbarMobileState extends State<NavbarMobile> {
   void initState() {
     super.initState();
     _selectedPageIndex = 0;
-
-    _pages = [StudentProfileMobile(), GalleryMobile(), ArticlesMobile(), AboutMobile()];
+    _pages = [
+      StudentProfileMobile(),
+      GalleryMobile(),
+      ArticlesMobile(),
+      AboutMobile()
+    ];
 
     _pageController = PageController(initialPage: _selectedPageIndex);
   }
@@ -36,7 +41,12 @@ class _NavbarMobileState extends State<NavbarMobile> {
   }
 
   @override
+  bool get wantKeepAlive => true;
+
+  @override
   Widget build(BuildContext context) {
+    super.build(context);
+
     final _bottomNavFonts =
         TextStyle(fontStyle: FontStyle.normal, fontWeight: FontWeight.w500);
 

@@ -1,15 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:legal_achievers/views/about/about_mobile.dart';
 import 'package:legal_achievers/views/about/about_tab.dart';
-import 'package:legal_achievers/views/articles/articles_mobile.dart';
 import 'package:legal_achievers/views/articles/articles_tab.dart';
 import 'package:legal_achievers/views/gallery/gallery_tab.dart';
 import 'package:legal_achievers/views/students/student_profile_tab.dart';
-
-import '../gallery/gallery_mobile.dart';
-import '../students/student_profile_mobile.dart';
 
 class NavBarTab extends StatefulWidget {
   const NavBarTab({Key? key}) : super(key: key);
@@ -18,11 +13,17 @@ class NavBarTab extends StatefulWidget {
   State<NavBarTab> createState() => _NavBarTabState();
 }
 
-class _NavBarTabState extends State<NavBarTab> {
+class _NavBarTabState extends State<NavBarTab>
+    with AutomaticKeepAliveClientMixin<NavBarTab> {
   int index = 0;
 
   @override
+  bool get wantKeepAlive => true;
+
+  @override
   Widget build(BuildContext context) {
+    super.build(context);
+
     return SafeArea(
       child: Scaffold(
         body: Row(

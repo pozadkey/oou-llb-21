@@ -4,9 +4,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:legal_achievers/model/articles_models/note_model.dart';
 
-class NoteDetailsTab extends StatelessWidget {
+class NoteDetailsTab extends StatefulWidget {
   final Note note;
   const NoteDetailsTab({Key? key, required this.note}) : super(key: key);
+
+  @override
+  State<NoteDetailsTab> createState() => _NoteDetailsTabState();
+}
+
+class _NoteDetailsTabState extends State<NoteDetailsTab>
+    with AutomaticKeepAliveClientMixin<NoteDetailsTab> {
+  @override
+  bool get wantKeepAlive => true;
 
   @override
   Widget build(BuildContext context) {
@@ -18,10 +27,12 @@ class NoteDetailsTab extends StatelessWidget {
 
     final _headerfonts = TextStyle(color: Colors.yellow[700]);
 
+    super.build(context);
+
     return CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
           middle: Text(
-        '${note.title} ',
+        '${widget.note.title} ',
         style: _headerfonts,
       )),
       child: SafeArea(
@@ -38,7 +49,7 @@ class NoteDetailsTab extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.fromLTRB(0, 10, 0, 30),
                       child: Text(
-                        note.content,
+                        widget.note.content,
                         style: _textfonts,
                       ),
                     ),

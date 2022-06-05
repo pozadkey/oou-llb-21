@@ -17,7 +17,8 @@ class GalleryMobile extends StatefulWidget {
   _GalleryMobileState createState() => _GalleryMobileState();
 }
 
-class _GalleryMobileState extends State<GalleryMobile> {
+class _GalleryMobileState extends State<GalleryMobile>
+    with AutomaticKeepAliveClientMixin<GalleryMobile> {
   final _sub_header_fonts = TextStyle(
       fontStyle: FontStyle.normal,
       fontSize: 13,
@@ -27,11 +28,16 @@ class _GalleryMobileState extends State<GalleryMobile> {
   final _headerfonts = TextStyle(color: Colors.yellow[700]);
 
   @override
+  bool get wantKeepAlive => true;
+
+  @override
   Widget build(BuildContext context) {
+    super.build(context);
     return CupertinoPageScaffold(
       child: NestedScrollView(
         headerSliverBuilder: (context, innerBoxIsScrolled) => [
           CupertinoSliverNavigationBar(
+            heroTag: 'galleryMobile',
             largeTitle: Text('Gallery', style: _headerfonts),
             automaticallyImplyLeading: false,
           )

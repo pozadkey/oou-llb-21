@@ -13,7 +13,8 @@ class AboutTab extends StatefulWidget {
   State<AboutTab> createState() => _AboutTabState();
 }
 
-class _AboutTabState extends State<AboutTab> {
+class _AboutTabState extends State<AboutTab>
+    with AutomaticKeepAliveClientMixin<AboutTab> {
   final _textfonts = TextStyle(
       fontStyle: FontStyle.normal,
       fontSize: 15,
@@ -28,8 +29,14 @@ class _AboutTabState extends State<AboutTab> {
 
   final _headerfonts = TextStyle(color: Colors.yellow[700]);
 
+  late int selectedIndex = 0;
+
+  @override
+  bool get wantKeepAlive => true;
+
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Row(
       children: [
         Flexible(
@@ -89,6 +96,9 @@ class _AboutTabState extends State<AboutTab> {
                             Note notes = noteList[index];
                             return Center(
                               child: ListTile(
+                                tileColor: selectedIndex == index
+                                    ? Colors.yellow[700]
+                                    : null,
                                 title: Text(
                                   notes.title,
                                   style: _textfonts,
@@ -100,6 +110,7 @@ class _AboutTabState extends State<AboutTab> {
                                 ),
                                 onTap: () {
                                   setState(() {
+                                    selectedIndex = index;
                                     sidePage = NoteDetailsTab(note: notes);
                                   });
                                 },
