@@ -98,7 +98,9 @@ class _ArticlesTabState extends State<ArticlesTab>
                                     ),
                                     trailing: Icon(
                                       Icons.navigate_next_rounded,
-                                      color: Colors.yellow[700],
+                                      color: selectedIndex == index
+                                          ? Colors.white
+                                          : Colors.yellow[700],
                                       size: 25,
                                     ),
                                     onTap: () {
@@ -148,7 +150,9 @@ class _ArticlesTabState extends State<ArticlesTab>
                                     ),
                                     trailing: Icon(
                                       Icons.navigate_next_rounded,
-                                      color: Colors.yellow[700],
+                                      color: storyIndex == index
+                                          ? Colors.white
+                                          : Colors.yellow[700],
                                       size: 25,
                                     ),
                                     onTap: () {
@@ -201,7 +205,9 @@ class _ArticlesTabState extends State<ArticlesTab>
                                     ),
                                     trailing: Icon(
                                       Icons.navigate_next_rounded,
-                                      color: Colors.yellow[700],
+                                      color: poemIndex == index
+                                          ? Colors.white
+                                          : Colors.yellow[700],
                                       size: 25,
                                     ),
                                     onTap: () {

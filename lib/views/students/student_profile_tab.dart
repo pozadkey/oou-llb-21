@@ -28,6 +28,8 @@ class _StudentProfileTabState extends State<StudentProfileTab>
 
   List<Students> searchedStudents = [];
 
+  late int selectedIndex = 0;
+
   @override
   bool get wantKeepAlive => true;
 
@@ -71,7 +73,6 @@ class _StudentProfileTabState extends State<StudentProfileTab>
                                   },
                                 ),
                               ),
-                              //Text('not found')
                               Center(
                                 child: Column(
                                   children: [
@@ -131,6 +132,9 @@ class _StudentProfileTabState extends State<StudentProfileTab>
                                         (a, b) => a.name.compareTo(b.name));
                                     return Center(
                                       child: ListTile(
+                                        tileColor: selectedIndex == index
+                                            ? Colors.yellow[700]
+                                            : null,
                                         title: Text(
                                           students.name,
                                           style: _textfonts,
@@ -148,11 +152,14 @@ class _StudentProfileTabState extends State<StudentProfileTab>
                                         ),
                                         trailing: Icon(
                                           Icons.navigate_next_rounded,
-                                          color: Colors.yellow[700],
+                                          color: selectedIndex == index
+                                              ? Colors.white
+                                              : Colors.yellow[700],
                                           size: 25,
                                         ),
                                         onTap: () {
                                           setState(() {
+                                            selectedIndex = index;
                                             sidePage = StudentDetailsTab(
                                                 students: students);
                                           });

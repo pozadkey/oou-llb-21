@@ -105,7 +105,9 @@ class _AboutTabState extends State<AboutTab>
                                 ),
                                 trailing: Icon(
                                   Icons.navigate_next_rounded,
-                                  color: Colors.yellow[700],
+                                  color: selectedIndex == index
+                                      ? Colors.white
+                                      : Colors.yellow[700],
                                   size: 25,
                                 ),
                                 onTap: () {
