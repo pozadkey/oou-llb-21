@@ -10,7 +10,7 @@ This is an offline yearbook app for Olabisi Onabanjo University's law class of 2
 
 ### iOS
 
-![Screenshot](https://github.com/pozadkey/oou-llb-21/blob/master/screenshots/oou-llb-21_iphone.png)
+![Screenshot](https://github.com/pozadkey/oou-llb-21/blob/master/screenshots/oou-llb-21-iphone.png)
 
 # Features:
 
@@ -52,5 +52,6 @@ flutter run
 # Live Preview
 
 [Android](https://play.google.com/store/apps/details?id=com.pozadkey.oou_llb_21)
+
 [iOS](https://apps.apple.com/ng/app/oou-llb21/id1632992447)
 
