@@ -21,7 +21,9 @@ This is an offline yearbook app for Olabisi Onabanjo University's law class of 2
 # Requirements
 
 > [Flutter SDK](https://docs.flutter.dev/get-started/install)
+
 > [Android Studio](https://developer.android.com/studio)
+
 > [Xcode](https://developer.apple.com/xcode/)
 
 # Usage
