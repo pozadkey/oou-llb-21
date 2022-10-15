@@ -65,6 +65,7 @@ class _GalleryMobileState extends State<GalleryMobile>
                       Navigator.of(context).push(
                           MaterialPageRoute(builder: (context) => GroupPic()));
                     },
+                    
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: Image.asset('assets/class_21/IMG_2268.JPG'),
